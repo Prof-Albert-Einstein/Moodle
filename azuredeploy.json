@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "_artifactsLocation": {
@@ -113,7 +113,7 @@
             "type": "string"
         },
         "siteURL": {
-            "defaultValue": "www.example.org",
+            "defaultValue": "www.yj-lma=s.org",
             "metadata": {
                 "description": "URL for Moodle site"
             },
@@ -519,7 +519,7 @@
             "type": "string"
         },
         "OSDiskSizeInGB": {
-            "defaultValue": 256,
+            "defaultValue": 128,
             "metadata": {
                 "description": "OS disk size per Webserver in VMSS"
             },
@@ -533,7 +533,7 @@
             "type": "int"
         },
         "fileServerDiskCount": {
-            "defaultValue": 4,
+            "defaultValue": 2,
             "minValue": 2,
             "maxValue": 8,
             "metadata": {
