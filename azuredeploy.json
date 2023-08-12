@@ -113,7 +113,7 @@
             "type": "string"
         },
         "siteURL": {
-            "defaultValue": "www.yj-lma=s.org",
+            "defaultValue": "www.example.org",
             "metadata": {
                 "description": "URL for Moodle site"
             },
@@ -1449,7 +1449,7 @@
             }
         ],
         "octets": "[split(parameters('vNetAddressSpace'), '.')]",
-        "resourceprefix": "[substring(uniqueString(resourceGroup().id, deployment().name), 3, 6)]",
+        "resourceprefix": "djcs-yj",
         "subnetSanPrefix": "[concat( variables('octets')[0], '.', variables('octets')[1], '.', string(add(int(variables('octets')[2]),2)))]",
         "subnetWebRange": "[concat( variables('octets')[0], '.', variables('octets')[1], '.', string(add(int(variables('octets')[2]),0)), '.0/24')]"
     }
