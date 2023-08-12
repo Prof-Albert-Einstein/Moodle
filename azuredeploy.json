@@ -1449,7 +1449,7 @@
             }
         ],
         "octets": "[split(parameters('vNetAddressSpace'), '.')]",
-        "resourceprefix": "djcs-yj",
+        "resourceprefix": "djcsyj",
         "subnetSanPrefix": "[concat( variables('octets')[0], '.', variables('octets')[1], '.', string(add(int(variables('octets')[2]),2)))]",
         "subnetWebRange": "[concat( variables('octets')[0], '.', variables('octets')[1], '.', string(add(int(variables('octets')[2]),0)), '.0/24')]"
     }
